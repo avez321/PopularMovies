@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_msg">Sign In to movie app</string>
+    <string name="email">Email</string>
+    <string name="password">Passowrd</string>
+    <string name="submit">Submit</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="login">Login</string>
+    <string name="release_date">Release Date: %s</string>
+    <string name="no_more_data_to_load">No more data to load</string>
+</resources>
