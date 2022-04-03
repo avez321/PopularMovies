@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.moviesapp.R
-import com.example.moviesapp.model.Result
+import com.example.moviesapp.model.Movie
 import com.example.moviesapp.ui.popular_movies.PopularMoviesAdapter
 
 
@@ -25,7 +25,7 @@ object BindingUtils {
 
     @JvmStatic
     @BindingAdapter("android:moviesData")
-    fun setData(recyclerView: RecyclerView, movieArrayList: ArrayList<Result>?) {
+    fun setData(recyclerView: RecyclerView, movieArrayList: ArrayList<Movie>?) {
         movieArrayList?.let {
             val movieAdapter = recyclerView.adapter as PopularMoviesAdapter
             movieAdapter.setData(it)

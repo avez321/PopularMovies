@@ -6,11 +6,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviesapp.R
 import com.example.moviesapp.databinding.ItemMovieBinding
-import com.example.moviesapp.model.Result
+import com.example.moviesapp.model.Movie
 
 
 class PopularMoviesAdapter : RecyclerView.Adapter<PopularMoviesAdapter.ContentViewHolder>() {
-    private var movieArrayList: ArrayList<Result>? = null
+    private var movieArrayList: ArrayList<Movie>? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentViewHolder {
         val movieBinding = DataBindingUtil.inflate<ItemMovieBinding>(
             LayoutInflater.from(parent.context),
@@ -30,7 +30,7 @@ class PopularMoviesAdapter : RecyclerView.Adapter<PopularMoviesAdapter.ContentVi
     }
 
 
-    fun setData(movieArrayList: ArrayList<Result>) {
+    fun setData(movieArrayList: ArrayList<Movie>) {
         if(this.movieArrayList==null) {
             this.movieArrayList = movieArrayList
         } else {
@@ -44,7 +44,7 @@ class PopularMoviesAdapter : RecyclerView.Adapter<PopularMoviesAdapter.ContentVi
     ) : RecyclerView.ViewHolder(binding.root) {
 
 
-        fun bind(movie: Result?) {
+        fun bind(movie: Movie?) {
             binding.movie = movie
         }
     }

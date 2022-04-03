@@ -16,7 +16,7 @@ data class MoviesResponse(
     val page: Int = 0,
     @SerializedName("results")
     @Expose
-    val results: ArrayList<Result>? = null,
+    val movies: ArrayList<Movie>? = null,
     @SerializedName("total_pages")
     @Expose
     val total_pages: Int? = null,
