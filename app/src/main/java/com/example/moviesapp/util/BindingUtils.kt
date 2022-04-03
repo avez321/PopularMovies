@@ -19,7 +19,7 @@ object BindingUtils {
             .load("https://image.tmdb.org/t/p/w200/" + url)
             .placeholder(R.drawable.loading_wait_time)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
-            .centerCrop()
+            .centerInside()
             .into(imageView);
     }
 
